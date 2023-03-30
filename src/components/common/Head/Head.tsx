@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-export const AsyncHelmet: React.FC = () => {
+export const Head: React.FC = () => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
@@ -21,4 +21,4 @@ export const AsyncHelmet: React.FC = () => {
   );
 };
 
-AsyncHelmet.displayName = "AsyncHelmet";
+Head.displayName = "Head";
