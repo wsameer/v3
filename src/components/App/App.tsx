@@ -1,4 +1,4 @@
-import Helmet from "components/common/Helmet";
+import Helmet from "components/common/AsyncHelmet";
 import PageLayout from "components/layout/PageLayout";
 import Section from "components/layout/Section";
 

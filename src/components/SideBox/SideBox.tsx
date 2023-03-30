@@ -14,7 +14,16 @@ export const SideBox: React.FC = () => {
           <p className="mt-2 mx-2 text-gray-300">Toronto, Canada</p>
         </div>
       </div>
-      <div></div>
+      <div className="pb-8 md:p-10 md:mt-4 mb-4 md:px-4 w-full md:w-72 lg:w-80 bg-gray-800 shadow-lg text-center">
+        <a
+          href="https://bit.ly/3jWKpS7"
+          rel="noreferrer"
+          target="_blank"
+          className="inline-flex text-white bg-transparent hover:transparent border-2 border-purple-700 py-2 px-6 focus:outline-none hover:bg-purple-700 rounded-full text-base md:text-lg"
+        >
+          Download CV
+        </a>
+      </div>
     </aside>
   );
 };
