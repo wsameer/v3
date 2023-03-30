@@ -4,7 +4,7 @@ import Section from "components/layout/Section";
 
 export const App: React.FC = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-gray-700 md:p-6">
       <Helmet />
       <PageLayout>
         <Section />
