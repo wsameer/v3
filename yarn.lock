@@ -777,6 +777,16 @@ lilconfig@^2.0.5, lilconfig@^2.0.6:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.1.0.tgz#78e23ac89ebb7e1bfbf25b18043de756548e7f52"
   integrity sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==
 
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
+lodash@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -924,7 +934,7 @@ postcss@^8.0.9, postcss@^8.4.21:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-prettier@^2.8.7:
+prettier@^2.6.2, prettier@^2.8.7:
   version "2.8.7"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.7.tgz#bb79fc8729308549d28fe3a98fce73d2c0656450"
   integrity sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==
@@ -1135,6 +1145,16 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vite-plugin-prettier@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vite-plugin-prettier/-/vite-plugin-prettier-0.0.4.tgz#62ef2dfe0e0ef7b6eb1f8cec5f3700e530d88512"
+  integrity sha512-JdWi9sWmRH5VWX5fheBokS03xig97vN/9bIcR4yLnJA/6mWrrGqo9efp8PuSfiQUroxUxI0JwapNvsQzyLVR6Q==
+  dependencies:
+    chokidar "^3.5.3"
+    lodash "^4.17.21"
+    lodash-es "^4.17.21"
+    prettier "^2.6.2"
 
 vite@^4.2.0:
   version "4.2.1"

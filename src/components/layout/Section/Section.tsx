@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export const Section: React.FC = () => {
-  return <div>Section</div>;
+    return <div>Section</div>;
 };
 
-Section.displayName = "Section";
+Section.displayName = 'Section';

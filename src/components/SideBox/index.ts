@@ -1,1 +1,1 @@
-export { SideBox as default } from "./SideBox";
+export { SideBox as default } from './SideBox';
