@@ -15,15 +15,18 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
+        "strictNullChecks": false,
         "jsx": "react-jsx",
         "types": ["node"],
         "paths": {
-            "@components": ["components"],
-            "@components/*": ["components/*"],
-            "@hooks": ["hooks"],
-            "@hooks/*": ["hooks/*"]
+            "components/*": ["components/*"],
+            "hooks/*": ["hooks/*"]
         }
     },
     "include": ["./src"],
-    "references": [{ "path": "./tsconfig.node.json" }]
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
 }
