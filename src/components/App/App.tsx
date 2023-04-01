@@ -1,6 +1,7 @@
+import Router from 'components/Router';
+import SideBox from 'components/SideBox';
 import Head from 'components/common/Head';
 import PageLayout from 'components/layout/PageLayout';
-import SideBox from 'components/SideBox';
 
 export const App: React.FC = () => {
     return (
@@ -8,6 +9,7 @@ export const App: React.FC = () => {
             <Head />
             <PageLayout>
                 <SideBox />
+                <Router />
             </PageLayout>
         </div>
     );
