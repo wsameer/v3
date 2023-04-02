@@ -7,6 +7,7 @@ export default defineConfig(configEnv => {
 	const isDevelopment = configEnv.mode === 'development';
 
 	return {
+		base: '/v3/',
 		plugins: [react(), prettier()],
 		resolve: {
 			alias: {
