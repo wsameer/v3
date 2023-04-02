@@ -12,25 +12,25 @@ import { useEffect, useState } from 'react';
 const MOBILE_MAX_WIDTH = 768;
 
 const useMobileDetect = () => {
-    const [isMobile, setIsMobile] = useState<boolean>(false),
-        handleWindowSizeChange = () => {
-            window.innerWidth <= MOBILE_MAX_WIDTH
-                ? setIsMobile(true)
-                : setIsMobile(false);
-        };
+	const [isMobile, setIsMobile] = useState<boolean>(false),
+		handleWindowSizeChange = () => {
+			window.innerWidth <= MOBILE_MAX_WIDTH
+				? setIsMobile(true)
+				: setIsMobile(false);
+		};
 
-    useEffect(() => {
-        setIsMobile(window.innerWidth <= MOBILE_MAX_WIDTH ? true : false);
-    }, []);
+	useEffect(() => {
+		setIsMobile(window.innerWidth <= MOBILE_MAX_WIDTH ? true : false);
+	}, []);
 
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        };
-    }, [setIsMobile]);
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange);
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange);
+		};
+	}, [setIsMobile]);
 
-    return { isMobile };
+	return { isMobile };
 };
 
 export default useMobileDetect;

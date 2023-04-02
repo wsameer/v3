@@ -1,5 +1,5 @@
 export type AvatarProps = {
-    srcFile: string;
-    width: string;
-    bgColor: string;
+	srcFile: string;
+	width: string;
+	bgColor: string;
 };

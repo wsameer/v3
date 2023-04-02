@@ -1,22 +1,25 @@
-import React, { HTMLProps, ReactNode } from 'react';
+import React, { ReactNode, HTMLProps } from 'react';
 
-interface SectionProps extends Omit<HTMLProps<HTMLDivElement>, 'id'> {
-    id: string;
-    children: ReactNode | undefined
+interface SectionProps extends HTMLProps<HTMLDivElement> {
+	id: string;
+	children: ReactNode;
 }
 
-export const Section: React.FC<SectionProps> = React.memo(
-    React.forwardRef((props, ref) => {
-        return (
-            <section
-                className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
-                ref={ref}
-                {...props}
-            >
-                {props.children}
-            </section>
-        );
-    })
+export const Section = React.memo(
+	React.forwardRef<HTMLDivElement, SectionProps>(
+		({ id, children, ...rest }, ref) => {
+			return (
+				<section
+					id={id}
+					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
+					ref={ref}
+					{...rest}
+				>
+					{children}
+				</section>
+			);
+		}
+	)
 );
 
 Section.displayName = 'Section';

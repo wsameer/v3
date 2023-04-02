@@ -1,42 +1,62 @@
 import About from 'components/About';
+import { Contact } from 'components/Contact/Contact';
+import { Experience } from 'components/Experience/Experience';
 import Hero from 'components/Hero';
+import { Work } from 'components/Work/Work';
 import Section from 'components/layout/Section';
-import React, { useEffect, useRef } from 'react';
+import React, { ReactNode, useEffect, useRef } from 'react';
+
+type SectionType = {
+	id: string;
+	component: ReactNode;
+};
 
 export const Router: React.FC = () => {
-    const sectionsRef = useRef<Array<HTMLElement | null>>([]),
-        executeScroll = (index: number) =>
-            window.scrollTo({
-                top: sectionsRef!.current[index]!.offsetTop - 2,
-                behavior: 'smooth'
-            }),
-        sections = [
-            {
-                id: 'hero',
-                component: <Hero executeScroll={executeScroll} />
-            },
-            {
-                id: 'about',
-                component: <About />
-            }
-        ];
+	const sectionsRef = useRef<Array<HTMLElement>>([]),
+		executeScroll = (index: number) =>
+			window.scrollTo({
+				top: sectionsRef!.current[index]!.offsetTop - 2,
+				behavior: 'smooth'
+			}),
+		sections: Array<SectionType> = [
+			{
+				id: 'hero',
+				component: <Hero executeScroll={executeScroll} />
+			},
+			{
+				id: 'about',
+				component: <About />
+			},
+			{
+				id: 'experience',
+				component: <Experience />
+			},
+			{
+				id: 'works',
+				component: <Work />
+			},
+			{
+				id: 'contact',
+				component: <Contact />
+			}
+		];
 
-    useEffect(() => {
-        sectionsRef.current = sectionsRef.current.slice(0, sections.length);
-    }, [sections.length]);
+	useEffect(() => {
+		sectionsRef.current = sectionsRef.current.slice(0, sections.length);
+	}, [sections.length]);
 
-    return (
-        <div className="ml-0 md:ml-72 lg:ml-80 flex flex-col">
-            {sections.map(({ id, component }, key) => (
-                <Section
-                    key={key}
-                    id={id}
-                    ref={(el: HTMLElement) => (sectionsRef.current[key] = el)}
-                    className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
-                >
-                    {component}
-                </Section>
-            ))}
-        </div>
-    );
+	return (
+		<div className="ml-0 md:ml-72 lg:ml-80 flex flex-col">
+			{sections.map(({ id, component }, key) => (
+				<Section
+					key={key}
+					id={id}
+					ref={el => (sectionsRef.current[key] = el)}
+					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
+				>
+					{component}
+				</Section>
+			))}
+		</div>
+	);
 };
