@@ -33,8 +33,7 @@ export const Button: React.FC<ButtonProps> = React.memo(
 			<button
 				ref={ref}
 				{...props}
-				className={`${style} ${props.className}`}
-			>
+				className={`${style} ${props.className}`}>
 				{React.Children.map(props.children, c => c)}
 			</button>
 		);

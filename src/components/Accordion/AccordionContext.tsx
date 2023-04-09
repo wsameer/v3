@@ -18,8 +18,7 @@ const AccordionProvider = ({ children }: AccordionProviderProps) => {
 			value={{
 				activeIndex,
 				toggleAccordion
-			}}
-		>
+			}}>
 			{children}
 		</AccordionContext.Provider>
 	);

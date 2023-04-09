@@ -22,8 +22,7 @@ export const ProjectDetails: React.FC<ProjectDescProps> = ({
 				{techList?.map((tech, index) => (
 					<span
 						key={index}
-						className="p-2 m-1 rounded bg-purple-600 hover:bg-purple-700 text-white text-xs"
-					>
+						className="p-2 m-1 rounded bg-purple-600 hover:bg-purple-700 text-white text-xs">
 						{tech}
 					</span>
 				))}

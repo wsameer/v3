@@ -13,8 +13,7 @@ export const Section = React.memo(
 					id={id}
 					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
 					ref={ref}
-					{...rest}
-				>
+					{...rest}>
 					{children}
 				</section>
 			);

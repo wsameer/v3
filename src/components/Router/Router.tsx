@@ -1,10 +1,10 @@
-import About from "@components/About";
-import Contact from "@components/Contact";
-import Experience from "@components/Experience";
-import Hero from "@components/Hero";
-import Work from "@components/Work";
-import Section from "@components/layout/Section";
-import { ReactNode, useEffect, useRef } from "react";
+import About from '@components/About';
+import Contact from '@components/Contact';
+import Experience from '@components/Experience';
+import Hero from '@components/Hero';
+import Work from '@components/Work';
+import Section from '@components/layout/Section';
+import { ReactNode, useEffect, useRef } from 'react';
 
 type SectionType = {
 	id: string;
@@ -52,8 +52,7 @@ export const Router: React.FC = () => {
 					key={key}
 					id={id}
 					ref={el => (sectionsRef.current[key] = el)}
-					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
-				>
+					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg">
 					{component}
 				</Section>
 			))}

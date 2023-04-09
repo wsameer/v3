@@ -13,8 +13,7 @@ export const SocialLink: React.FC<Props> = ({ url, logo, label }) => {
 			rel="noreferrer"
 			href={url}
 			target="_blank"
-			aria-label={label}
-		>
+			aria-label={label}>
 			<span>{logo}</span>
 		</a>
 	);
