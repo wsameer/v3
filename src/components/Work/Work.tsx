@@ -10,14 +10,14 @@ export const Work: React.FC = () => {
 			title: 'Octoprofile Plus',
 			description:
 				'A nicer look at your GitHub Profile! With themes, charts and React! Search for your mentors or peers profile, sort through their repos by forks, stars and sizes, toggle the view between list and grid and view some very informative charts.',
-			techList: ['Reactjs', 'GraphQL', 'Github API'],
+			techList: ['React-ts', 'GraphQL', 'Github API'],
 			links: [] as Array<ProjectLink>
 		},
 		projectTwo: ProjectDescProps = {
 			title: 'Reakt Dashboard',
 			description:
 				'A simple dashboard app consisting of 3 small React learner projects: Weather app with live timer, Premier League table with live updates and a Todo app with dark skin',
-			techList: ['Reactjs', 'Bootstrap', 'Open Weather API'],
+			techList: ['React', 'Vite', 'Open Weather API'],
 			links: [] as Array<ProjectLink>
 		};
 

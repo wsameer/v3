@@ -45,8 +45,9 @@ export const AccordionHeader: React.FC<
 				>
 					<ChevronDown
 						height="16"
-						className={`transition ${activeIndex === index ? `rotate-0` : `rotate-90`
-							}`}
+						className={`transition ${
+							activeIndex === index ? `rotate-0` : `rotate-90`
+						}`}
 					/>
 				</button>
 			</div>
