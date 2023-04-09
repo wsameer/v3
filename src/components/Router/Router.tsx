@@ -1,10 +1,10 @@
-import About from 'components/About';
-import { Contact } from 'components/Contact/Contact';
-import { Experience } from 'components/Experience/Experience';
-import Hero from 'components/Hero';
-import { Work } from 'components/Work/Work';
-import Section from 'components/layout/Section';
-import React, { ReactNode, useEffect, useRef } from 'react';
+import About from "@components/About";
+import Contact from "@components/Contact";
+import Experience from "@components/Experience";
+import Hero from "@components/Hero";
+import Work from "@components/Work";
+import Section from "@components/layout/Section";
+import { ReactNode, useEffect, useRef } from "react";
 
 type SectionType = {
 	id: string;
