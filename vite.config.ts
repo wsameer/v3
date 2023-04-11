@@ -13,7 +13,8 @@ export default defineConfig(configEnv => {
 			alias: {
 				'@components': resolve(__dirname, 'src', 'components'),
 				'@hooks': resolve(__dirname, 'src', 'hooks'),
-				'@assets': resolve(__dirname, 'src', 'assets')
+				'@assets': resolve(__dirname, 'src', 'assets'),
+				'@pages': resolve(__dirname, 'src', 'pages')
 			}
 		},
 		css: {
