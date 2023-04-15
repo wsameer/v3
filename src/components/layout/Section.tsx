@@ -1,4 +1,4 @@
-import React, { ReactNode, HTMLProps } from "react";
+import React, { ReactNode, HTMLProps } from 'react';
 
 interface SectionProps extends HTMLProps<HTMLDivElement> {
 	id: string;
@@ -13,8 +13,7 @@ const Section = React.memo(
 					id={id}
 					className="text-gray-400 bg-gray-800 md:ml-6 md:mb-6 shadow-lg"
 					ref={ref}
-					{...rest}
-				>
+					{...rest}>
 					{children}
 				</section>
 			);
@@ -22,6 +21,6 @@ const Section = React.memo(
 	)
 );
 
-Section.displayName = "Section";
+Section.displayName = 'Section';
 
 export default Section;

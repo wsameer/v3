@@ -3,6 +3,7 @@ import Contact from '@components/Contact';
 import Experience from '@components/Experience';
 import Hero from '@components/Hero';
 import Work from '@components/Work';
+import PageContent from '@components/layout/PageContent';
 import Section from '@components/layout/Section';
 import { ReactNode, useEffect, useRef } from 'react';
 
@@ -46,7 +47,7 @@ export const Home: React.FC = () => {
 	}, [sections.length]);
 
 	return (
-		<main className="ml-0 md:ml-72 lg:ml-80 flex flex-col">
+		<PageContent>
 			{sections.map(({ id, component }, key) => (
 				<Section
 					key={key}
@@ -56,6 +57,6 @@ export const Home: React.FC = () => {
 					{component}
 				</Section>
 			))}
-		</main>
+		</PageContent>
 	);
 };

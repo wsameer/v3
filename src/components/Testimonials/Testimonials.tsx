@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export const Testimonials = () => {
-    return (
-        <div>Testimonials</div>
-    )
+const Testimonials: React.FC = () => {
+	return <div>Testimonials</div>;
 };
+
+export default Testimonials;
