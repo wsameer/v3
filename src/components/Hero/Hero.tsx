@@ -1,13 +1,14 @@
 import React from 'react';
-import type { Props } from './types';
 import { Text } from '@components/common/Text/Text';
 import { Button } from '@components/common/Button/Button';
+
+export type Props = { executeScroll: (index: number) => void };
 
 export const Hero: React.FC<Props> = ({ executeScroll }) => {
 	return (
 		<div className="mx-auto flex px-6 py-12 md:px-10 md:flex-row flex-col items-start">
 			<div className="md:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start text-left">
-				<Text className="text-base lg:text-xl">Hello! I&apos;m</Text>
+				<Text className="text-white lg:text-xl">Hello! I&apos;m</Text>
 				<h1 className="title-font text-6xl lg:text-7xl mt-3 md:mt-2 font-bold text-white">
 					Sameer.
 				</h1>
