@@ -2,12 +2,10 @@ import PageLayout from '@components/layout/PageLayout';
 import React from 'react';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RoutePaths from './types';
-import { SideBox } from '@components/SideBox/SideBox';
 import Home from '@pages/Home';
 
 const Root: React.FC = () => (
 	<PageLayout>
-		<SideBox />
 		<Outlet />
 	</PageLayout>
 );
@@ -32,9 +30,9 @@ const router = createBrowserRouter([
 
 const Routes: React.FC = () => {
 	return (
-		<div id="app-router">
+		<main id="app-router">
 			<RouterProvider router={router} />
-		</div>
+		</main>
 	);
 };
 
