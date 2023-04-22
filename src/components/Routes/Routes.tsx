@@ -31,7 +31,7 @@ const router = createBrowserRouter([
 const Routes: React.FC = () => {
 	return (
 		<main id="app-router">
-			<RouterProvider router={router} />
+			<RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
 		</main>
 	);
 };
