@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// TODO: use NavLink instead
 import { Link } from 'react-router-dom';
 
 export type NavLinkProps = {
@@ -10,13 +11,13 @@ export type NavLinkProps = {
 
 const NavLink: React.FC<NavLinkProps> = React.memo(
 	({ title, link, isActive }) => {
+		console.log(title, link);
 		return (
 			<li>
 				<Link
 					to={link}
-					className={`relative block mx-1.5 px-4 py-1.5 text-base rounded-full transition hover:text-purple-500 dark:hover:text-purple-400 ${
-						isActive && 'bg-gray-700'
-					}`}>
+					className={`relative block mx-1.5 px-4 py-1.5 text-base rounded-full transition ${isActive && 'bg-gray-700'
+						}`}>
 					{title}
 				</Link>
 			</li>
