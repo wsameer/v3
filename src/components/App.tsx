@@ -1,9 +1,9 @@
-import Routes from "@components/Routes/Routes";
+import Routes from '@components/Routes/Routes';
 
 const App: React.FC = () => (
-  <div className="min-h-screen bg-gray-700">
-    <Routes />
-  </div>
+	<div className="min-h-screen bg-gray-700">
+		<Routes />
+	</div>
 );
 
 export default App;
