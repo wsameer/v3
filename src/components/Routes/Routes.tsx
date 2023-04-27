@@ -3,10 +3,14 @@ import React from 'react';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RoutePaths from './types';
 import Home from '@pages/Home';
+import Header from '@components/layout/Header';
+import { Footer } from '@components/Footer/Footer';
 
 const Root: React.FC = () => (
 	<PageLayout>
+		<Header />
 		<Outlet />
+		<Footer />
 	</PageLayout>
 );
 
@@ -30,9 +34,7 @@ const router = createBrowserRouter([
 
 const Routes: React.FC = () => {
 	return (
-		<main id="app-router">
-			<RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
-		</main>
+		<RouterProvider router={router} fallbackElement={<p>Loading...</p>} />
 	);
 };
 
